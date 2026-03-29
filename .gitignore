@@ -1,0 +1,40 @@
+# Test Results and Reports
+log.html
+output.xml
+report.html
+results/
+pabot_results/
+history/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv/
+
+# IDE and Editor
+.vscode/
+.idea/
+.history/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Environment Variables
+.env
+.env.local
+
+# OS Specific
+.DS_Store
+Thumbs.db
+
+# Dependencies (optional, uncomment if needed)
+# .robotidy_cache/
