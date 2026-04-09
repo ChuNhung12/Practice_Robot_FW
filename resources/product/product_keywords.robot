@@ -29,9 +29,9 @@ Add Product To Cart
     Wait Until Element Is Visible    ${ADD_TO_CART_BUTTON}    10s
     Click Button    ${ADD_TO_CART_BUTTON}
     # Wait for modal confirmation
-    Wait Until Element Is Visible    css=button[data-dismiss="modal"]    10s
+    Wait Until Element Is Visible    ${MODAL_CLOSE_BUTTON}    10s
 
 Verify Product Added To Cart
     [Documentation]    Verify that the product was successfully added to the cart by checking for the confirmation message and modal close button.
-    Wait Until Element Is Visible    xpath=//p[contains(text(), 'Your product has been added to cart')]    10s
-    Element Should Be Visible    css=button[data-dismiss="modal"]
+    Wait Until Element Is Visible    ${PRODUCT_ADDED_MESSAGE}    10s
+    Element Should Be Visible    ${MODAL_CLOSE_BUTTON}

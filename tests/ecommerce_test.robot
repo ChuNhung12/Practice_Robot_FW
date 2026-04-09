@@ -11,6 +11,7 @@ Resource    ../variables/payment_info/payment_data.robot
 
 Test Teardown    Close Browser
 
+
 *** Test Cases ***
 Complete Ecommerce Flow
     [Documentation]    Full ecommerce flow: Login > Product > Cart > Checkout > Payment > Confirmation
@@ -29,4 +30,3 @@ Complete Ecommerce Flow
     Fill Payment Information    ${NAME}    ${CARD_NUMBER}    ${CVC}    ${EXPIRY_MONTH}    ${EXPIRY_YEAR}
     Pay And Confirm Order
     Verify Order Success
-    Close Browser

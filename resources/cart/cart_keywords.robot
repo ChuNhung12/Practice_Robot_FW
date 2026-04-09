@@ -2,7 +2,6 @@
 Documentation     Keywords for managing the shopping cart functionality.
 Library     SeleniumLibrary
 Resource    cart_locators.robot
-Resource    ../product/product_locators.robot
 
 
 *** Keywords ***

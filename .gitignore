@@ -12,6 +12,10 @@ __pycache__/
 *$py.class
 *.so
 
+# Robocop / Robotidy Cache
+.robocop_cache/
+.robotidy_cache/
+
 # Virtual Environments
 venv/
 env/
@@ -21,7 +25,6 @@ ENV/
 # IDE and Editor
 .vscode/
 .idea/
-.history/
 *.swp
 *.swo
 *~
@@ -32,9 +35,18 @@ Thumbs.db
 .env
 .env.local
 
-# OS Specific
-.DS_Store
-Thumbs.db
+# Local history & logs
+.history/
+pabot_manager.log
+
+# Pabot & WebDriver Temp Files
+.pabotsuitenames
+geckodriver*.log
+chromedriver*.log
+edgedriver*.log
+
+# Browser local config (optional - uncomment if needed)
+# variables/browser/*.txt
 
 # Dependencies (optional, uncomment if needed)
 # .robotidy_cache/

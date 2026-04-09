@@ -1,27 +1,22 @@
-#🧪 Final #3: Cross-Browser Testing (Level: Intermediate)
+#🧪 Final #3: Cross-Browser Testing (Level: Advanced)
 *** Settings ***
+Documentation    Sequential browser testing suite. Run once to execute both Chrome and Edge.
 Resource   ../resources/login/login_keywords.robot
-Resource   ../resources/product/product_keywords.robot
-Resource   ../resources/cart/cart_keywords.robot
-Resource   ../resources/checkout/checkout_keywords.robot
 Resource   ../variables/login/login_data.robot
 
 Test Teardown    Close Browser
 
+
 *** Test Cases ***
-Login-Logout Flow on Chrome
-    [Documentation]    Login and logout flow on Chrome
-    Set Test Variable    ${BROWSER}    chrome
+Login-Logout Flow
+    [Documentation]    Login and logout flow. Browser is controlled externally via ${BROWSER}.
     Run Login Test
 
-Login-Logout Flow on Firefox
-    [Documentation]    Login and logout flow on Firefox
-    Set Test Variable    ${BROWSER}    firefox
-    Run Login Test
 
 *** Keywords ***
 Run Login Test
-    [Documentation]    Common login and logout test steps
+    [Documentation]    Common login and logout flow
+    Log    Running on browser: ${BROWSER}
     Open Automation Exercise
     Go To Login Page
     Fill Login Form    ${VALID_EMAIL}    ${VALID_PASSWORD}

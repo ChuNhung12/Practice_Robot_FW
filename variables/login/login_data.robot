@@ -3,6 +3,6 @@ Library     String
 
 
 *** Variables ***
-# Đồng bộ với email trong dữ liệu đăng ký để đảm bảo account hợp lệ
+# Synchronize with email in registration data to ensure valid account
 ${VALID_EMAIL}          nhungtest12@gmail.com
 ${VALID_PASSWORD}       Test@123
